@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon  app.js",
-    "build": "npm install --prefix ./frontend && npm run build --prefix ./frontend && npm install"
+    "start": "node  app.js",
+"server": "nodemon app.js",
+    "build": "cd frontend && npm install && npm run build && cd .. && npm install"
   },
   "keywords": [],
   "author": "",
